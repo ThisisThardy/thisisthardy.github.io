@@ -8,14 +8,37 @@
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
   </head>
   <body>
-    <header>
-      <img src="img/thardy-long.svg" alt="THardy logo">
-    </header>
-    <nav>
-      <a href="index.html">Home Page</a>
-      <a href="aboutMe.html">About Me</a>
-      <a href="#">My Projects</a>
-    </nav>
+        <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+              <a class="navbar-item">
+                <img src="img/thardy-short.svg">
+              </a>
+          
+              <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
+          
+            <div id="navbarBasicExample" class="navbar-menu">
+              <div class="navbar-start">
+
+              </div>
+          
+              <div class="navbar-end">
+                <div class="navbar-item is-link">
+                    <a href="index.html"> Index </a>
+                </div>
+                <div class="navbar-item is-link">
+                    <a href="#"> Projects </a>
+                </div>
+                <div class="navbar-item is-active">
+                    <a href="about_me.html"> About me</a>
+                </div>
+              </div>
+            </div>
+          </nav>
     <section>
     </section>
   </body>
