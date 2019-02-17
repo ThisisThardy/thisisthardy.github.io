@@ -4,64 +4,385 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Timothy Hardy</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+    <link rel="stylesheet" href="css/bulma.css">
+    <link rel="stylesheet"  href="css/style.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
   </head>
   <body>
-    <!--Navbar-->
-    <nav class="navbar is-primary is-fixed-top is-bold" role="navigation" aria-label="main navigation">
+    <!-- Navigation bar -->
+    <nav class="navbar is-link is-fixed-top">
       <div class="navbar-brand">
-        <a class="navbar-item">
-          <img src="img/thardy-short.svg">
-        </a>
-
-        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-
-      </div>
-      <div id="navbarBasicExample" class="navbar-menu">
-        <div class="navbar-start">
+        <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
+      </div>
+  
+      <div id="navbarExampleTransparentExample" class="navbar-menu">
         <div class="navbar-end">
-          <a class="navbar-item button is-primary has-text-weight-bold has-text-black" href="#">Index</a>
-          <a class="navbar-item button is-primary has-text-weight-bold has-text-black" href="projects.html">Projects</a>
-          <a class="navbar-item button is-primary has-text-weight-bold has-text-black" href="about_me.html">About me</a>
+          <a class="navbar-item" href="#about">
+            <span class="icon">
+              <i class="fas fa-info"></i>
+            </span>
+            <span>About</span>
+          </a>
+          <a class="navbar-item" href="#skills">
+            <span class="icon">
+              <i class="fas fa-bars"></i>
+            </span>
+            <span>Skills</span>
+          </a>
+          <a class="navbar-item" href="#resume">
+            <span class="icon">
+              <i class="fas fa-file-alt"></i>
+            </span>
+            <span>Resume</span>
+          </a>
+          <a class="navbar-item" href="#portfolio">
+            <span class="icon">
+              <i class="fas fa-th-list"></i>
+            </span>
+            <span>Portfolio</span>
+          </a>
+          <a class="navbar-item" href="#contact">
+            <span class="icon">
+              <i class="fas fa-envelope"></i>
+            </span>
+            <span>Contact</span>
+          </a>
         </div>
       </div>
     </nav>
-    <!--/Navbar-->
-
-    <!--Header-->
-    <section class="hero is-primary is-medium">
+  
+    <!-- Header -->
+    <section class="hero is-link is-fullheight is-fullheight-with-navbar">
       <div class="hero-body">
-        <div class="container has-text-black">Hello, I'm
-          <h1 class="title has-text-black">
-            Timothy!
+        <div class="container">Hello! I am
+          <h1 class="title is-1">
+            Timothy
           </h1>
-          <h2 class="subtitle has-text-black">
-            I am a young developer who is just getting started in the wide world of Programming, Web design and scripting
+          <h2 class="subtitle is-3">
+              I am a young developer who is just getting started in the wide world of Programming, Web design and scripting
           </h2>
         </div>
       </div>
     </section>
-    <!--/Header-->
-
-    <!--Introduction-->
-    <section class="section">
-      <!--Who Am I-->
+  
+    <!-- About -->
+    <section class="section" id="about">
+      <!-- Title -->
       <div class="section-heading">
         <h3 class="title is-2">Who am I?</h3>
         <h4 class="subtitle is-5">Always eager to learn more</h4>
         <div class="container">
           <p>An Information systems student looking to exapnd into the world of programming. Currently have base knowledge of Visual Basic, Javascript, HTML, CSS and always looking to pick up more.
-            Keen to take on many things and also get a deeper knowledge on most facets of programming and designing </p>
+              Keen to take on many things and also get a deeper knowledge on most facets of programming and designing</p>
         </div>
       </div>
-      <!--/Who Am I-->
+  
+      <div class="columns has-same-height is-gapless">
+        <div class="column">
+          <!-- Profile --> 
+          <div class="card">
+            <div class="card-content">
+              <h3 class="title is-4">Profile</h3>
+  
+              <div class="content">
+                <table class="table-profile">
+                  <tr>
+                    <th colspan="1"></th>
+                    <th colspan="2"></th>
+                  </tr>
+                  <tr>
+                    <td>Address:</td>
+                    <td>New Zealand, Auckland</td>
+                  </tr>
+                  <tr>
+                    <td>Phone:</td>
+                    <td>0210 228 7279</td>
+                  </tr>
+                  <tr>
+                    <td>Email:</td>
+                    <td>timothyhardy02@gmail.com</td>
+                  </tr>
+                </table>
+              </div>
+              <br>
+              <div class="buttons has-addons is-centered">
+                <a href="https://github.com/ThisisThardy" class="button is-link">Github</a>
+                <a href="#" class="button is-link">LinkedIn</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <!-- Profile picture -->
+          <!--ToDo: Fix Image-->
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-1by1">
+                <img src="img/panda.png" alt="Placeholder image">
+              </figure>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <!-- Skills -->
+          <div class="card">
+            <div class="card-content skills-content">
+              <h3 class="title is-128x128">Skills</h3>
+              <div class="content">
+  
+                <article class="media">
+                  <div class="media-content">
+                    <div class="content">
+                      <p>
+                        <strong>JavaScript:</strong>
+                        <br>
+                        <progress class="progress is-primary" value="20" max="100"></progress>
+                      </p>
+                    </div>
+                  </div>
+                </article>
+  
+                <article class="media">
+                  <div class="media-content">
+                    <div class="content">
+                      <p>
+                        <strong>Visual Basic:</strong>
+                        <br>
+                        <progress class="progress is-primary" value="15" max="100"></progress>
+                      </p>
+                    </div>
+                  </div>
+                </article>
+  
+                <article class="media">
+                  <div class="media-content">
+                    <div class="content">
+                      <p>
+                        <strong>C#:</strong>
+                        <br>
+                        <progress class="progress is-primary" value="20" max="100"></progress>
+                      </p>
+                    </div>
+                  </div>
+                </article>
+  
+                <article class="media">
+                  <div class="media-content">
+                    <div class="content">
+                      <p>
+                        <strong>HTML/CSS</strong>
+                        <br>
+                        <progress class="progress is-primary" value="20" max="100"></progress>
+                      </p>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-  </body>
-</html>
+  
+    <!-- skills -->
+    <section class="section" id="skills">
+      <div class="section-heading">
+        <h3 class="title is-2">Skills</h3>
+        <h4 class="subtitle is-5">What can I do</h4>
+      </div>
+      <div class="container">
+        <div class="columns">
+          <div class="column">
+            <div class="box">
+              <div class="content">
+                <h4 class="title is-5">Front End Web Development</h4>
+                Develop Front End using HTML and CSS with added funtionality using JavaScript
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="box">
+              <div class="content">
+                <h4 class="title is-5">Back End Web Development</h4>
+                Develop Back End application/service using JS and .NET.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Resume -->
+    <!--ToDo: Create resume-->
+    <section class="section" id="resume">
+      <div class="section-heading">
+        <h3 class="title is-2">Resume</h3>
+        <h4 class="subtitle is-5">More about my past</h4>
+        <a href="#" class="button is-link is-medium">
+          <span class="icon">
+            <i class="fas fa-file-alt"></i>
+          </span>
+          <span>Download My Resume</span>
+        </a>
+      </div>
+    </section>
+  
+    <!-- Portfolio -->
+    <section class="section" id="portfolio">
+      <div class="container">
+        <div class="section-heading">
+          <h3 class="title is-2">Portfolio</h3>
+          <h4 class="subtitle is-5">My latest works</h4>
+        </div>
+        <br>
+  
+        <div class="container portfolio-container">
+          <div class="columns">
+            <div class="column is-4">
+              <!-- RPS -->
+              <div class="card">
+                <header class="card-header">
+                  <p class="card-header-title">
+                    <span>Rock Paper Scissors</span>
+                    <span class="is-pulled-right">
+                      <a href="https://github.com/ThisisThardy/rock_paper_scissors">
+                        <span class="tag is-default">V1</span>
+                      </a>
+                      <span class="tag is-danger">WIP</span>
+                    </span>
+                  </p>
+                </header>
+                <div class="card-content">
+                  <figure class="image">
+                    <img src="img/RPS.png" alt="Rock">
+                  </figure>
+                </div>
+                <footer class="card-footer">
+                  <a href="https://github.com/ThisisThardy/rock_paper_scissors" class="card-footer-item">Source
+                    Code</a>
+                </footer>
+              </div>
+            </div>
+            <div class="column is-4">
+              <!-- band -->
+              <div class="card">
+                <header class="card-header">
+                  <p class="card-header-title">
+                    <span>Whale Speak Translator</span>
+                    <span class="is-pulled-right">
+                      <a href="https://github.com/ThisisThardy/whalespeak">
+                        <span class="tag is-default">V1</span>
+                      </a>
+                      <span class="tag is-danger">WIP</span>
+                    </span>
+                  </p>
+                </header>
+                <div class="card-content">
+                  <figure class="image">
+                    <img src="img/whale.png" alt="Band template screenshot">
+                  </figure>
+                </div>
+                <footer class="card-footer">
+                  <a href="https://github.com/ThisisThardy/whalespeak" class="card-footer-item">Code</a>
+                </footer>
+              </div>
+            </div>
+            <div class="column is-4">
+              <!-- blog -->
+              <div class="card">
+                <header class="card-header">
+                  <p class="card-header-title">
+                    <span>Linter</span>
+                    <span class="is-pulled-right">
+                      <a href="https://github.com/ThisisThardy/linter">
+                        <span class="tag is-default">V1</span>
+                      </a>
+                      <span class="tag is-danger">WIP</span>
+                    </span>
+                  </p>
+                </header>
+                <div class="card-content">
+                  <figure class="image">
+                    <img src="img/Linter.png" alt="Blog template screenshot">
+                  </figure>
+                </div>
+                <footer class="card-footer">
+                  <a href="https://github.com/ThisisThardy/linter" class="card-footer-item">Code</a>
+                </footer>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- Contact -->
+    <!--ToDo: Create Java script form-->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-heading">
+          <h3 class="title is-2">Contact</h3>
+          <h4 class="subtitle is-5">Get in touch</h4>
+        </div>
+        <br>
+  
+        <div class="columns">
+          <div class="column is-6 is-offset-3">
+            <div class="box">
+              <div class="field">
+                <label class="label">Name</label>
+                <div class="control">
+                  <input class="input" type="text" placeholder="Text input">
+                </div>
+              </div>
+  
+              <div class="field">
+                <label class="label">Email</label>
+                <div class="control has-icons-left">
+                  <input class="input" type="email" placeholder="Email input" value="">
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-envelope"></i>
+                  </span>
+                </div>
+              </div>
+  
+              <div class="field">
+                <label class="label">Message</label>
+                <div class="control">
+                  <textarea class="textarea" placeholder="Textarea"></textarea>
+                </div>
+              </div>
+  
+              <div class="field is-grouped has-text-centered">
+                <div class="control">
+                  <button class="button is-link is-large"><span class="icon">
+                      <i class="fas fa-envelope"></i>
+                    </span>
+                    <span>Submit</span></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </section>
+  
+    <!-- Footer -->
+    <!--ToDo: Find out what i need to put in the footer-->
+    <footer class="footer">
+      <div class="section-heading">
+        <p>
+          <strong>Bulma Personal Template</strong> by <a href="https://mubaidr.js.org">Muhammad Ubaid Raza</a>. The
+          source code is licensed
+          <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.
+        </p>
+      </div>
+    </footer>
+  </body>
+  
+  </html>
